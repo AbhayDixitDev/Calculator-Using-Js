@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border: 5px solid black;
+            background-color: gray;
+            align-items: center;
+        }
+        table tr td{
+            margin: 10px;
+            padding: 10px;
+            button{
+               padding: 50px;
+               font-size: 24px;
+            }
+        }
+        #output{
+            font-size: 24px;
+            width: 100%;
+            height: 80px;
+        }
+        #output1{
+            font-size: 24px;
+            height: 80px;
+            background-color: gray;
+            color: white;
+        }
+        #output2{
+            font-size: 24px;
+            height: 80px;
+            background-color: gray;
+            color: white;
+        }
+        #output3{
+            font-size: 24px;
+            height: 80px;
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+
+<body bgcolor="orange">
+    <table >
+        <tr bgcolor="skyblue">
+            <td colspan="2"><input type="text" placeholder="First Value" id="output1"></td>
+            <td colspan="2"><input type="text" placeholder="Operation" id="output2"></td>
+        </tr>
+        <tr bgcolor="skyblue">
+            <td colspan="4"><input type="text" placeholder="0" id="output"></td>
+        </tr>
+        <tr>
+            <td bgcolor="white"><button onclick="cal(this)" value="1">1</button></td>
+            <td bgcolor="white"><button onclick="cal(this)" value="2">2</button></td>
+            <td bgcolor="white"><button onclick="cal(this)" value="3">3</button></td>
+            <td bgcolor="white"><button onclick="cal(this)" value="+">+</button></td>
+        </tr>
+        <tr>
+            <td bgcolor="white"><button onclick="cal(this)" value="4">4</button></td>
+            <td bgcolor="white"><button onclick="cal(this)" value="5">5</button></td>
+            <td bgcolor="white"><button onclick="cal(this)" value="6">6</button></td>
+            <td bgcolor="white"><button onclick="cal(this)" value="-">-</button></td>
+
+           
+        </tr>
+        <tr>
+            <td bgcolor="white"><button onclick="cal(this)" value="7">7</button></td>
+            <td bgcolor="white"><button onclick="cal(this)" value="8">8</button></td>
+            <td bgcolor="white"><button onclick="cal(this)" value="9">9</button></td>
+            <td bgcolor="white"><button onclick="cal(this)" value="/">/</button></td>
+        </tr>
+        <tr>
+            <td bgcolor="white"><button onclick="cal(this)" value="0">0</button></td>
+            <td bgcolor="white"><button onclick="cal(this)" value="*">*</button></td>
+            <td bgcolor="white"><button onclick="cal(this)" value=".">.</button></td>
+            <td bgcolor="white"><button onclick="cal(this)" value="=">=</button></td>
+        </tr>
+      
+    </table>
+
+    <script src="./calculator.js"></script>
+
+</body>
+
+</html>
